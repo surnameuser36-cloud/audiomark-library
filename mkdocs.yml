@@ -1,0 +1,13 @@
+site_name: AudioMark Library
+site_description: Руководство по развертыванию и использованию AudioMark Library
+theme:
+  name: mkdocs
+nav:
+  - Начало работы: index.md
+  - Руководство пользователя: user-guide.md
+  - Развертывание: deployment.md
+  - HTTP API: api.md
+  - Проверка функций: testing.md
+plugins:
+  - search
+

@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">AudioMark</string>
+    <string name="catalog_title">Библиотека аудиокниг</string>
+    <string name="search_hint">Поиск по названию или автору</string>
+    <string name="all_books">Все</string>
+    <string name="completed_books">Прослушано</string>
+    <string name="book_cover">Обложка книги</string>
+    <string name="retry">Повторить</string>
+    <string name="play">Воспроизвести</string>
+    <string name="pause">Пауза</string>
+    <string name="like">Нравится</string>
+    <string name="comment_hint">Комментарий к текущей позиции</string>
+    <string name="send_comment">Комментировать</string>
+</resources>
+

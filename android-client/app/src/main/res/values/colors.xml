@@ -1,0 +1,11 @@
+<resources>
+    <color name="navy">#17324D</color>
+    <color name="blue">#2E6F95</color>
+    <color name="blue_light">#EAF3F8</color>
+    <color name="accent">#E98B4A</color>
+    <color name="text_primary">#17212B</color>
+    <color name="text_secondary">#5B6875</color>
+    <color name="white">#FFFFFF</color>
+    <color name="surface">#F6F8FA</color>
+</resources>
+

@@ -1,0 +1,18 @@
+services:
+  audiomark-server:
+    build: ./server
+    container_name: audiomark-server
+    ports:
+      - "8080:8080"
+    environment:
+      AUDIOMARK_AUDIO_DIR: /app/data/audio
+      AUDIOMARK_DB_PATH: /app/data/db/audiomark.db
+      AUDIOMARK_PORT: 8080
+    volumes:
+      - ./server/data/audio:/app/data/audio:ro
+      - audiomark-db:/app/data/db
+    restart: unless-stopped
+
+volumes:
+  audiomark-db:
+

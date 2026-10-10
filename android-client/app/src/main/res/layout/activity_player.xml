@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/surface"
+    android:fillViewport="true">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+        <TextView android:id="@+id/playerTitle" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:textColor="@color/navy"
+            android:textSize="24sp" android:textStyle="bold" />
+        <TextView android:id="@+id/playerAuthor" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="4dp"
+            android:textColor="@color/text_secondary" android:textSize="15sp" />
+        <Spinner android:id="@+id/partSpinner" android:layout_width="match_parent"
+            android:layout_height="48dp" android:layout_marginTop="12dp" />
+        <SeekBar android:id="@+id/playerSeek" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp" />
+        <TextView android:id="@+id/timeText" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:gravity="center"
+            android:text="0:00 / 0:00" android:textColor="@color/text_secondary" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:orientation="horizontal">
+            <Button android:id="@+id/playButton" style="@style/PrimaryButton"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_weight="1" android:text="@string/play" />
+            <Button android:id="@+id/likeButton" style="@style/PrimaryButton"
+                android:layout_width="0dp" android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp" android:layout_weight="1"
+                android:text="@string/like" />
+        </LinearLayout>
+        <TextView android:id="@+id/playerDescription" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="12dp"
+            android:textColor="@color/text_primary" android:textSize="14sp" />
+        <EditText android:id="@+id/commentInput" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="14dp"
+            android:hint="@string/comment_hint" android:maxLength="500"
+            android:minHeight="54dp" />
+        <Button android:id="@+id/commentButton" style="@style/PrimaryButton"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="@string/send_comment" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="18dp" android:text="Комментарии и метки"
+            android:textColor="@color/navy" android:textSize="18sp" android:textStyle="bold" />
+        <LinearLayout android:id="@+id/commentsContainer" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:orientation="vertical" />
+    </LinearLayout>
+</ScrollView>
+
